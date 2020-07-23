@@ -10,6 +10,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
+    <!-- <div id="loadingWrap">
+        <div id="loading"></div>
+    </div> -->
+
     <div class="nav-fixed">
         <div class="nav-box">
             <div class="nav-left">
@@ -31,9 +35,7 @@
             </div>
         </div>
     </div>
-    <div id="loadingWrap">
-        <div id="loading"></div>
-    </div>
+
     <div class="Top">
         <img src="/Users/suzukiyuusuke/Desktop/20-7-20 about me/img/738_pe_h.png" alt="ロゴマーク" class="logo">
         <div class="title">
@@ -68,7 +70,7 @@
             <div class="service-kind1">
                 <div class="kind-img-box">
                     <div class="kind-img">
-                        <img src="/Users/suzukiyuusuke/Desktop/20-7-20 about me/img/1094_pc_h.png" alt="パソコン">
+                        <img src="/Users/suzukiyuusuke/Desktop/20-7-20 about me/img/1094_pc_h.png" alt="パソコン" class="kind-img1">
                     </div>
                 </div>
                 <div class="kind-name-box">
@@ -87,7 +89,7 @@
             <div class="service-kind2">
                 <div class="kind-img-box">
                     <div class="kind-img">
-                        <img src="/Users/suzukiyuusuke/Desktop/20-7-20 about me/img/797_me_h.png" alt="デザイン">
+                        <img src="/Users/suzukiyuusuke/Desktop/20-7-20 about me/img/797_me_h.png" alt="デザイン" class="kind-img2">
                     </div>
                 </div>
                 <div class="kind-name-box">
@@ -106,7 +108,7 @@
             <div class="service-kind3">
                 <div class="kind-img-box">
                     <div class="kind-img">
-                        <img src="/Users/suzukiyuusuke/Desktop/20-7-20 about me/img/keyboard_hoso.png" alt="コーディング">
+                        <img src="/Users/suzukiyuusuke/Desktop/20-7-20 about me/img/keyboard_hoso.png" alt="コーディング" class="kind-img3">
                     </div>
                 </div>
                 <div class="kind-name-box">
@@ -116,66 +118,128 @@
                     <div class="kind-detile">
                         デザインを基にした動きや配色<br>
                         でWebサイトをより良いものに<br>
-                        いたします。<br>
-                        レスポンシブ対応にする、納品<br>
-                        後のメンテナンスをしやすい形<br>
-                        で仕上げるなどを意識したコー<br>
-                        ディングをいたします。
+                        いたします。納品後のメンテナ<br>
+                        ンスをしやすい形で仕上げるな<br>
+                        どを意識したコーディングをい<br>
+                        たします。
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="works-box">
+        <div class="works-title-box">
+            <div class="works-title">Works</div>
+        </div>
+        <div class="works-kind-box">
+            <div class="works-kind-box1">
+                <div class="works-kind-title-box">
+                    <div class="works-kind-title">私のポートフォリオ</div>
+                </div>
+                <div class="works-kind-detile-box">
+                    <div class="works-kind-detile">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="works-kind-box2">
+                <div class="works-kind-title-box">
+                    <div class="works-kind-title">PHPの日記アプリ</div>
+                </div>
+                <div class="works-kind-detile-box">
+                    <div class="works-kind-detile">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="works-kind-box3">
+                <div class="works-kind-title-box">
+                    <div class="works-kind-title">coming soon</div>
+                </div>
+                <div class="works-kind-detile-box">
+                    <div class="works-kind-detile">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="works-more-box">
+            <div class="works-more">View more →</div>
+        </div>
+    </div>
+
+    <div class="about-box">
+        <div class="about-titlebox">
+            <div class="about-title">About</div>
+        </div>
+        <div class="about-sub-titlebox">
+            <div class="about-sub-title">東京のIT企業に勤めています</div>
+        </div>
+        <div class="about-kind-box">
+            <div class="about-kinds-box">
+                <div class="about-kind-img-box">
+                    <img src="/Users/suzukiyuusuke/Desktop/20-7-20 about me/img/IMG_1608 3.jpg" alt="yusuke" class="about-kind-img">
+                </div>
+                <div class="about-kind-detile-box">
+                    <div class="about-kind-name-box">
+                        <div class="about-kind-name">名前：</div>
+                        <div class="about-kind-detile-name">鈴木　悠祐</div>
+                    </div>
+                    <br>
+                    <div class="about-kind-skill-box">
+                        <div class="about-kind-skill">スキル：</div>
+                        <div class="about-kind-detile-slill">
+                            サイトデザイン / コーディング - HTML5, CSS, JavaScript, 
+                            PHP / <br> フレームワーク - Laravel / Github
+                        </div>
+                    </div>
+                    <br>
+                    <div class="about-kind-mail-box">
+                        <div class="about-kind-mail">お問い合わせ：</div>
+                        <div class="about-kind-detile-maile">hogehoge@e-mail</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lead-form-box">
+      <p class="lead-form">Contact</p>
+    </div>  
+    <form>
+        <div class="form-box">
+            <div class="form-writing-box">
+                <div class="form-item-box">
+                    <label class="label">貴社名</label>
+                    <input class="inputs" type="text" name="name">
+                </div>
+                <div class="form-item-box">
+                    <label class="label">お名前</label>
+                    <input class="inputs" type="email" name="email">
+                </div>
+                <div class="form-item-box">
+                    <label class="label">電話番号</label>
+                    <input class="inputs" type="email" name="email">
+                </div>
+                <div class="form-item-box">
+                    <label class="label">メールアドレス</label>
+                    <input class="inputs" type="email" name="email">
+                </div>
+                <div class="form-item-box">
+                    <label class="label">お問い合わせ内容</label>
+                    <textarea class="inputs"></textarea>
+                </div>
+            </div>
+            <div class="btn-area">
+                <input type="submit" value="送信する"><input type="reset" value="リセット">
+            </div>
+        </div>
+    </form>
 
 
 
 
-
-
-
-    <h2>test</h2>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    
         
     
 </body>

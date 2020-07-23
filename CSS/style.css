@@ -20,7 +20,7 @@
 }
 
 .nav-logo {
-    width: 5vh;
+    width: 10%;
     height: 5vh;
     margin: 1%;
 }
@@ -58,7 +58,7 @@
 }
 
 
-/* body{
+body{
     position: static;
 }
 
@@ -70,7 +70,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 100;
 }
         
 #loading {
@@ -113,7 +113,7 @@
         opacity: 0;
         display: none;
     }
-}  */
+} 
 
 .Top {
     position: relative;
@@ -303,32 +303,379 @@
 }
 
 .service-box {
-
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    
+    /* border: solid; */
 }
 
 .service-title-box {
+    width: 100%;
+    position: relative;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
 
+.service-title {
+    text-align: center;
+    position: relative;
+    margin: 0%;
+    padding: 0;
+    font-size: calc(240% + 0.25vw);
 }
 
 .service-kind-box {
-    
+    width: 80%;
+    position: relative;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 10% 3% 10%;
+    /* background-color: blue; */
 }
 
 .service-kind1,
 .service-kind2,
 .service-kind3 {
-
+    width: 80%;
+    margin: 1%;
+    padding: 5%;
 }
 
 .kind-name-box,
 .kind-img-box,
 .kind-detile-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: none;
 
 }
-.kind-img-box {
+ 
+.kind-img1,
+.kind-img2,
+.kind-img3 {
+    position: relative;
+    width: 10vw;
+    height: 10vh;
+    object-fit: cover;
+}
+
+
+
+.kind-detile {
+    /* padding-bottom: 1%; */
+    font-size: calc(65% + 0.25vw);
+}
+
+
+/*  */
+/*  */
+.works-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    /* border: solid; */
+}
+
+.works-title-box{
+    width: 100%;
+    position: relative;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.works-title {
+    text-align: center;
+    position: relative;
+    margin: 0%;
+    padding: 0;
+    font-size: calc(240% + 0.25vw);
+}
+
+.works-kind-box{
+    width: 80%;
+    position: relative;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10% 0 10%;
+}
+
+.works-kind-box1,
+.works-kind-box2,
+.works-kind-box3 {
+    width: 80%;
+    margin: 1%;
+    padding: 5%;
+} 
+
+.works-kind-title-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: none;
+}
+
+.works-kind-title{
+    font-size: calc(65% + 0.25vw);
+}
+
+.works-kind-detile-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: none;
+}
+
+.works-kind-detile {
+    font-size: calc(45% + 0.25vw);
+    display: inline-block;
+    
+}
+
+.works-more-box {
+    width: 80%;
+    position: relative;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10% 0 10%;
+    
+}
+.works-more {
+    border: solid;
+    padding: 0 10% 0 10%;
 
 }
 
-.kind-img {
+/*  */
+.about-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    /* border: solid; */
+}
 
+.about-titlebox {
+    width: 100%;
+    position: relative;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.about-title {
+    text-align: center;
+    position: relative;
+    margin: 0%;
+    padding: 0;
+    font-size: calc(240% + 0.25vw);
+}
+
+.about-sub-titlebox {
+    width: 100%;
+    position: relative;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.about-sub-title {
+    text-align: center;
+    position: relative;
+    margin: 0%;
+    padding: 0;
+}
+
+.about-kind-box{
+    width: 80%;
+    position: relative;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10% 0 10%;
+}
+
+.about-kinds-box{
+    width: 80%;
+    position: relative;
+    top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about-kind-img-box{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3%;
+    /* padding: 5%; */
+}
+
+
+.about-kind-img{
+    position: relative;
+    width: 25vm;
+    height: 25vh;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about-kind-detile-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-kind-name-box{
+
+
+}
+
+.about-kind-name{
+
+
+}
+
+.about-kind-detile-name{
+
+
+}
+
+.about-kind-skill-box{
+
+
+}
+
+.about-kind-skill{
+
+
+}
+
+.about-kind-detile-slill {
+
+}
+
+.about-kind-mail-box{
+
+
+}
+
+.about-kind-mail{
+
+
+}
+
+.about-kind-detile-maile{
+
+
+}
+
+.lead-form{
+    text-align: center;
+    font-size:20px;
+  }
+form{
+width:100%;
+margin:0 auto;
+padding: 10%;
+display: flex;
+justify-content: center;
+}
+
+.form-box{
+    width: 80%;
+    justify-content: center;
+}
+
+
+.form-item-box{
+overflow: hidden;
+margin-bottom: 20px;
+}
+
+.label{
+float: left;
+margin-right: 20px;
+width:135px;
+border-left: solid 3px #e0505d;
+padding-left: 10px;
+}
+
+.inputs{
+float: left;
+width:300px;
+}
+
+input[type="text"],input[type="email"]{
+border: solid 1px #aaa;
+border-radius:5px;
+padding:10px;
+font-size: 15px;
+}
+
+textarea{
+border: solid 1px #aaa;
+border-radius:5px;
+padding: 10px;
+height: 160px;
+font-size: 15px;
+}
+
+.btn-area{
+text-align: center;
+}
+
+input[type="submit"]{
+background: #e0505c;
+border: none;
+color: white;
+font-size:17px;
+font-weight:bold;
+padding: 10px 20px;
+margin: 0 5px;
+}
+
+input[type="reset"]{
+background: #aaa;
+border: none;
+color: white;
+font-size:17px;
+font-weight:bold;
+padding: 10px 20px;
+margin: 0 5px;
 }
