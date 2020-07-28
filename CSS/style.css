@@ -1,3 +1,9 @@
+.container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+
 .nav-fixed {
     position: fixed;
     top: 0;
@@ -116,6 +122,7 @@ body{
 } 
 
 .Top {
+    scroll-snap-align: start;
     position: relative;
     top: 0;
     left: 0;
@@ -174,6 +181,22 @@ body{
 .item-menu{
     margin: 3%;
     font-size: calc(130% + 0.25vw);
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+.item-menu:hover {
+    background-color: black;
+    color: white;
+}
+  
+.item-menu::before {
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
 }
 
 .arrowWrap {
@@ -303,6 +326,7 @@ body{
 }
 
 .service-box {
+    scroll-snap-align: start;
     position: relative;
     top: 0;
     left: 0;
@@ -365,7 +389,7 @@ body{
 .kind-img2,
 .kind-img3 {
     position: relative;
-    width: 10vw;
+    width: 10vH;
     height: 10vh;
     object-fit: cover;
 }
@@ -381,6 +405,7 @@ body{
 /*  */
 /*  */
 .works-box {
+    scroll-snap-align: start;
     position: relative;
     top: 0;
     left: 0;
@@ -423,7 +448,7 @@ body{
 .works-kind-box3 {
     width: 80%;
     margin: 1%;
-    padding: 5%;
+    padding: 1%;
 } 
 
 .works-kind-title-box {
@@ -470,6 +495,7 @@ body{
 
 /*  */
 .about-box {
+    scroll-snap-align: start;
     position: relative;
     top: 0;
     left: 0;
@@ -608,74 +634,155 @@ body{
 .lead-form{
     text-align: center;
     font-size:20px;
-  }
-form{
-width:100%;
-margin:0 auto;
-padding: 10%;
-display: flex;
-justify-content: center;
 }
 
-.form-box{
-    width: 80%;
+.contact-box {
+    scroll-snap-align: start;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    /* border: solid; */
+}
+
+
+.contact-title-box{
+    width: 100%;
+    position: relative;
+    top: 20vh;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
-
-.form-item-box{
-overflow: hidden;
-margin-bottom: 20px;
+.contact-title {
+    text-align: center;
+    position: relative;
+    margin: 0%;
+    padding: 0;
+    font-size: calc(240% + 0.25vw);
 }
 
-.label{
-float: left;
-margin-right: 20px;
-width:135px;
-border-left: solid 3px #e0505d;
-padding-left: 10px;
+.contact-info-box {
+    width: 100%;
+    position: relative;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: 3%;
+}
+
+.contact-ditaile-box {
+    width: 100%;
+    position: relative;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.contact-detaile-kind-box {
+    width: auto;
+
+}
+
+.contact-detaile-kind {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+}
+
+.contact-ditaile-left {
+    width: 10vw;
+    display: flex;
+    align-items: center;
+}
+
+.contact-ditaile-left-box {
+
+}
+
+.contact-ditaile-right {
+    width: 40vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: start;
+
+}
+
+.contact-ditaile-right-box {
+
 }
 
 .inputs{
-float: left;
-width:300px;
+    float: left;
+    width:300px;
 }
 
 input[type="text"],input[type="email"]{
-border: solid 1px #aaa;
-border-radius:5px;
-padding:10px;
-font-size: 15px;
+    border: solid 1px #aaa;
+    border-radius:5px;
+    padding:10px;
+    font-size: 15px;
 }
 
 textarea{
-border: solid 1px #aaa;
-border-radius:5px;
-padding: 10px;
-height: 160px;
-font-size: 15px;
+    border: solid 1px #aaa;
+    border-radius:5px;
+    padding: 10px;
+    height: 160px;
+    font-size: 15px;
 }
 
 .btn-area{
-text-align: center;
+    /* text-align: center; */
+    width: 100%;
+    position: relative;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input[type="submit"]{
-background: #e0505c;
-border: none;
-color: white;
-font-size:17px;
-font-weight:bold;
-padding: 10px 20px;
-margin: 0 5px;
+    background: #e0505c;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+    margin: 0 5px;
 }
 
 input[type="reset"]{
-background: #aaa;
-border: none;
-color: white;
-font-size:17px;
-font-weight:bold;
-padding: 10px 20px;
-margin: 0 5px;
+    background: #aaa;
+    border: none;
+    color: white;
+    font-size:17px;
+    font-weight:bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.footer {
+    scroll-snap-align: start;
+    position: relative;
+    top: 25vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: #fff;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+p {
+    color: black;
+    font-size: calc(45% + 0.25vw);
 }
